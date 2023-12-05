@@ -1,0 +1,483 @@
+/* Base selector */
+
+html {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FFFCF5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* for mobile */
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* ------------- */
+
+
+/* Typography selectors */
+
+h1 {
+    font-size: 4rem;
+    color: #000000;
+}
+
+h2 {
+    font-size: 3.3333rem;
+    color: #000000;
+}
+
+h3 {
+    font-size: 2.6667rem;
+    color: #000000;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #000000;
+}
+
+h5 {
+    font-size: 1.6667rem;
+    color: #000000;
+}
+
+h6 {
+    font-size: 1.3333rem;
+    color: #000000;
+}
+
+p {
+    font-size: 1rem;
+    color: #747474;
+}
+
+/* ------------------- */
+
+
+/* Utility selectors */
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center-element,
+.column-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ----------------- */
+
+
+/* navigation bar */
+
+#navigation-bar {
+    position: absolute;
+    width: 60%;
+}
+
+.app-banner {
+    display: flex;
+    align-items: center;
+}
+
+#navigation-bar .app-banner {
+    margin-left: 2rem;
+}
+
+.app-banner img {
+    width: 50px;
+    height: 50px;
+}
+
+.app-banner h6 {
+    white-space: nowrap;
+    margin: 1rem;
+}
+
+#navigation-bar .navigation-bar-links {
+    justify-content: space-around;
+    width: 60%;
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+#navigation-bar .navigation-bar-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #373737;
+    margin: 0rem 1rem;
+}
+
+/* mobile adjustments */
+@media only screen and (max-width: 900px) {
+    #navigation-bar {
+        width: 100%;
+    }
+
+    #navigation-bar .navigation-bar-links {
+        width: 100%;
+    }
+}
+
+/* -------------- */
+
+
+/* Home section */
+
+#home {
+    margin-bottom: 8rem;
+}
+
+#home .columns .column-element:nth-child(1) {
+    width: 60%;
+}
+
+#home .columns .column-element:nth-child(2) {
+    width: 40%;
+}
+
+.home-text {
+    width: 60%;
+    margin: 2.5rem;
+}
+
+.download-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.download-buttons img {
+    width: 30%;
+    min-width: 150px;
+    margin: 2rem;
+}
+
+.hero-image-box {
+    width: 100%;
+    height: 100%;
+    background-color: #FDF6E9;
+    border-bottom-left-radius: 100px;
+}
+
+.hero-image-box img {
+    width: 50%;
+    min-width: 250px;
+    margin: 4rem;
+}
+
+/* mobile adjustments */
+@media only screen and (max-width: 900px) {
+    #home .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home .columns .column-element:nth-child(1),
+    #home .columns .column-element:nth-child(2) {
+        width: 100%;
+    }
+
+    .home-text {
+        width: 75%;
+        text-align: center;
+    }
+
+    .download-buttons {
+       margin-bottom: 5rem;
+    }
+
+    .hero-image-box {
+        border-bottom-left-radius: 0px;
+    }
+    .hero-image-box img {
+        max-width: 250px;
+        min-width: 100px;
+    }
+}
+
+/* ------------ */
+
+
+/*  Features section */
+
+#features {
+    margin: 6rem;
+}
+
+#features.columns {
+    align-items: start;
+}
+
+#features.columns .column-element {
+    width: 25%;
+}
+
+#features.columns .column-element h5{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#features.columns .column-element p {
+    text-align: center;
+}
+
+#features.columns .feature-icon-circle {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #FDF6E9;
+    border-radius: 50%;
+}
+
+.feature-icon-circle img {
+    width: 50px;
+    height: 50px;
+}
+
+/* mobile adjustments */
+@media only screen and (max-width: 900px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+        margin: 6rem 0rem;
+    }
+
+    #features.columns {
+        align-items: center;
+        width: 100%;
+    }
+
+    #features.columns .column-element {
+        width: 50%;
+        margin: 2rem;
+    }
+
+    #features.columns .column-element h5{
+        margin-top: 1.5rem;
+    }
+}
+
+/*  --------------- */
+
+
+/*  About section */
+
+#about {
+    margin: 8rem 0rem;
+}
+
+#about .about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0% 2%;
+}
+
+#about .about-card .about-card-image-box {
+    white-space: nowrap;
+    width: 40%;
+    background: #FDF6E9;
+    overflow: hidden;
+}
+
+.about-card-image-box.on-left {
+    border-radius: 0px 100px 100px 0px;
+}
+
+.about-card-image-box.on-right {
+    border-radius: 100px 0px 0px 100px;
+}
+
+#about .about-card .about-card-text {
+    width: 40%;
+    margin: 10%;
+}
+
+#about .about-card .about-card-image-box img {
+    width: 270px;
+    height: auto;
+    transform-origin: 1px 1px;
+}
+
+.about-card-image-box img:nth-child(1) {
+    transform: translate(-45%, -35%) rotate(-15deg);
+}
+
+.about-card-image-box img:nth-child(2) {
+    transform: translate(-5%, -5%) rotate(-15deg);
+}
+
+.about-card-image-box img:nth-child(3) {
+    transform: translate(-190%, 65%) rotate(-15deg);
+}
+
+/* mobile adjustments */
+@media only screen and (max-width: 900px) {
+    #about .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .about-card:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    #about .about-card .about-card-image-box {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .about-card-image-box.on-left {
+        border-radius: 0px;
+    }
+    
+    .about-card-image-box.on-right {
+        border-radius: 0px;
+    }
+
+    #about .about-card .about-card-text {
+        width: 60%;
+        text-align: center;
+        margin: 4rem 0rem;
+    }
+}
+
+/*  ------------- */
+
+
+/*  Download section */
+
+#download .download-box {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    border-radius: 75px;
+    background: #FEFEFE;
+    margin-bottom: 10rem;
+}
+
+#download .download-box h4 {
+    padding: 3rem 15%;
+    padding-bottom: 0rem;
+    margin-bottom: 1rem;
+}
+
+#download .download-buttons {
+    margin:auto;
+    width: 80%;
+}
+
+/*  ---------------- */
+
+
+/*  Footer section */
+
+#footer .columns {
+    justify-content: space-evenly;
+    align-items: start;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+#footer .column-element > h6 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+#footer .column-element:nth-child(1) {
+    width: 25%;
+    align-items: start;
+}
+
+#footer .column-element:nth-child(2) ul {
+    margin: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+#footer .column-element:nth-child(2) ul li a {
+    text-decoration: none;
+    color: #373737;
+}
+
+.social-media-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.social-media-buttons img {
+    width: 36px;
+    height: 36px;
+    margin: 2%;
+}
+
+.contact-us-links .contact-us-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-us-links .contact-us-link img {
+    width: 28px;
+    height: 28px;
+    margin: 5%;
+}
+
+.contact-us-links .contact-us-link p {
+    margin: 0%;
+}
+
+/* mobile adjustments */
+@media only screen and (max-width: 750px) {
+    #footer .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .column-element:nth-child(1) {
+        width: 40%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer .column-element {
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us-part .contact-us-links .contact-us-link {
+        justify-content: center;
+    }
+}
+
+/*  ----------------- */
