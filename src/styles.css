@@ -169,10 +169,21 @@ p {
     justify-content: space-evenly;
 }
 
-.download-buttons img {
+.download-buttons a {
+    display: inline-block;
     width: 30%;
     min-width: 150px;
     margin: 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.download-buttons a:hover {
+    transform: scale(1.05);
+}
+
+.download-buttons img {
+    width: 100%;
+    height: auto;
 }
 
 .hero-image-box {
@@ -391,8 +402,12 @@ p {
 }
 
 #download .download-buttons {
-    margin:auto;
+    margin: auto;
     width: 80%;
+}
+
+#download .download-buttons a {
+    margin: 2rem;
 }
 
 /*  ---------------- */
